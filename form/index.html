@@ -1,0 +1,115 @@
+<html>
+<head>
+    <link rel="stylesheet"href="bootstrap.css">
+    <link rel="stylesheet"href="bootstrap.js">
+    <script src="form.js"></script>
+    
+</head>
+<body>
+ 
+<div class="container">
+<h2>fill the following form</h2>
+<form>
+    
+    <div class="form-group">
+    
+       <label for="fname">First name : </label> <input type="text"class="form-control"id="fname"/>
+       <label for="lname" >Last name : </label> <input type="text"class="form-control"id="lname"/>
+       
+    </div>
+    
+    <div class="form-group">
+        
+        <label for="mobile"  >Mobile number : </label> <input type="text"class="form-control"id="mobile" placeholder=""/>
+        <label for="email"  >E-mail address : </label> <input type="text"class="form-control"id="email"/>
+    </div>
+    
+    <div class="form-group">
+        
+      <label for="faculty">faculty</label>
+      <select class="form-control" id="fac" onchange="return selectf();">
+        <option>Electrical</option>
+        <option>science</option>
+        <option>medicine</option>
+        <option>commerce</option>
+        <option>literature</option>
+        <option>laws</option>
+        <option>pharmacy</option>
+        <option id="otherfac">others</option>
+      </select>
+     
+      <div id="faculty"style="visibility:hidden;margin-top:0;margin-bottom:0;">
+               please specify <input type="text">
+      </div>
+        
+     </div>
+        
+    <div class="form-group">
+        
+      <label for="university">University</label>
+      <select class="form-control" id="uni" onchange="return selectu();">
+          
+        <option>Ain-shams university</option>
+        <option>cairo university</option>
+        <option>Helwan university</option>
+        <option>Alexandrai university</option>
+        <option id="otherUniv">others</option>
+          
+      </select>
+            <div id="univ"style="visibility:hidden;margin-top:15px;">
+               please specify <input type="text">
+            </div>
+       
+    </div>
+    
+  
+        
+     
+        
+    
+    
+        
+   
+    
+
+    
+    <div class="container"style="text-align:center;">
+
+        
+            <div class="form-group">
+
+                       
+                        <a href="#"id="submit"type="submit" class="btn btn-default"onclick="return check();">Submit</a>
+                    
+
+                    
+                        <button class="btn btn-default">Clear</button>
+                    
+
+            </div>
+
+        
+    </div>
+</form>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<script>
+    $(document).ready(function(){
+        
+        $("#submit").submit(function(e) {
+           e.preventDefault();
+});
+    });
+</script>
+    
+</body>
+    
+
+    
+
+
+</html>
